@@ -20,7 +20,7 @@ steps:
 - script: |
     npm install
     npm test
-    npm audit fix
+    npm audit fix --force
 
 - task: PublishTestResults@2
   inputs:
